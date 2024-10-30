@@ -1,0 +1,6 @@
+@FilmManagerSqlServe_MongoDb_HostAddress = http://localhost:5114
+
+GET {{FilmManagerSqlServe_MongoDb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

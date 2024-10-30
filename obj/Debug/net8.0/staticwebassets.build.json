@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "66XjKEc7WD67S6dClBqOVUOrZFAw5c1N/xTON4fJkXQ=",
+  "Source": "FilmManagerSqlServe&MongoDb",
+  "BasePath": "_content/FilmManagerSqlServe&MongoDb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
