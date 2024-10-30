@@ -55,7 +55,7 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
             await _employeeCollection.ReplaceOneAsync(filter, film);
         }
 
-        [HttpPost("Add")]
+        [HttpPut("Add")]
         public async void Add(string film_name, string film_Ulr_img, string film_director, string film_relase_date, CategoryMDB category, List<TagMDB> tags)
         {
             var film = new FilmMDB

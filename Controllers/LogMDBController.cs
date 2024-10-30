@@ -47,7 +47,7 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
             await _employeeCollection.ReplaceOneAsync(filter, log);
         }
 
-        [HttpPost("Add")]
+        [HttpPut("Add")]
         public async void Add(string errorMessage, string dateError)
         {
             var log = new LogMDB
