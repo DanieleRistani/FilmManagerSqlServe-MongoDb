@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmManagerSqlServe&MongoDb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baef83e8762741bff3ae09e1596eaaf919039c7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eb186a19cea3f53354ecd2d15bd0a251a0b6d92")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmManagerSqlServe&MongoDb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmManagerSqlServe&MongoDb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
