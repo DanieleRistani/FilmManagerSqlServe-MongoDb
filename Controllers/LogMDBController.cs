@@ -32,5 +32,40 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         {
             return await _employeeCollection.Find(l => l.LogDateError.ToUpper() == date.ToUpper()).ToListAsync();
         }
+
+        [HttpPost("Update/{name}")]
+        public async void Update(string name,LogMDB newLog)
+        {
+            var filter = Builders<FilmMDB>.Filter.Eq(f => f.FilmName.ToUpper(), name.ToUpper());
+
+            var log = new LogMDB
+            {
+                logErrorMessage = newLog.LogErrorMessage,
+                logDateError = newLog.LogDateError,
+            }
+
+            await _employeeCollection.ReplaceOneAsync(filter, film);
+        }
+
+        [HttpPost("Add")]
+        public async void Add(string errorMessage, string dateError)
+        {
+            var log = new LogMDB
+            {
+                logErrorMessage = errorMessage,
+                logDateError = dateError
+            }
+
+            await _employeeCollection.InsertOneAsync(log);
+        }
+
+        [HttpPost("Delete/{date}")]
+        public async Task<DeleteResult> Delete(string date)
+        {
+            return await _employeeCollection.DeleteManyAsync(l => l.LogDateError.ToUpper() == date.ToUpper());
+        }
+
+
+
     }
 }

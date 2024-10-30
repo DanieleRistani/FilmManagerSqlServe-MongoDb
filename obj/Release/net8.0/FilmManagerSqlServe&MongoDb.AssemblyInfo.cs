@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmManagerSqlServe&MongoDb")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+794e6b1852dffdc7e2629ad6b6f0960fc3a3ed6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmManagerSqlServe&MongoDb")]
