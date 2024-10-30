@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GXX49VeeVw8=",
+  "dgSpecHash": "acsniQdJ4hU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniele\\source\\repos\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
+  "projectFilePath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniele\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Daniele\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

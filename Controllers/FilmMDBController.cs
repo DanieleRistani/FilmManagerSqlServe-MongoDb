@@ -39,13 +39,13 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
 
             var film = new FilmMDB
             {
-               filmName = newFilmInfo.FilmName,
-               filmUrlImg = newFilmInfo.FilmUrlImg,
-               filmDirector = newFilmInfo.FilmDirector,
-               filmRelaseDate = newFilmInfo.FilmRelaseDate,
-               filmCategory = newFilmInfo.FilmCategory,
-               filmsTagsPivots = []
-            }
+                FilmName = newFilmInfo.FilmName,
+                FilmUrlImg = newFilmInfo.FilmUrlImg,
+                FilmDirector = newFilmInfo.FilmDirector,
+                FilmRelaseDate = newFilmInfo.FilmRelaseDate,
+                FilmCategory = newFilmInfo.FilmCategory,
+                FilmsTagsPivots = []
+            };
 
             foreach (var tag in newFilmInfo.FilmsTagsPivots)
             {
@@ -60,13 +60,13 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         {
             var film = new FilmMDB
             {
-               filmName= film_name,
-               filmUrlImg= film_Ulr_img,
-               filmDirector= film_director,
-               filmRelaseDate= film_relase_date,
-               filmCategory = category,
-               filmsTagsPivots = []
-            }
+                FilmName = film_name,
+                FilmUrlImg = film_Ulr_img,
+                FilmDirector = film_director,
+                FilmRelaseDate = film_relase_date,
+                FilmCategory = category,
+                FilmsTagsPivots = []
+            };
             
 
             foreach (var tag in tags)

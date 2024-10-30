@@ -8468,11 +8468,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniele\\source\\repos\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
+      "projectUniqueName": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
       "projectName": "FilmManagerSqlServe&MongoDb",
-      "projectPath": "C:\\Users\\Daniele\\source\\repos\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
+      "projectPath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb.csproj",
       "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniele\\source\\repos\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\obj\\",
+      "outputPath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe&MongoDb\\FilmManagerSqlServe&MongoDb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

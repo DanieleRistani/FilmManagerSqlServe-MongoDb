@@ -36,15 +36,15 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         [HttpPost("Update/{name}")]
         public async void Update(string name,LogMDB newLog)
         {
-            var filter = Builders<FilmMDB>.Filter.Eq(f => f.FilmName.ToUpper(), name.ToUpper());
+            var filter = Builders<LogMDB>.Filter.Eq(f => f.LogErrorMessage.ToUpper(), name.ToUpper());
 
             var log = new LogMDB
             {
-                logErrorMessage = newLog.LogErrorMessage,
-                logDateError = newLog.LogDateError,
-            }
+                LogErrorMessage = newLog.LogErrorMessage,
+                LogDateError = newLog.LogDateError,
+            };
 
-            await _employeeCollection.ReplaceOneAsync(filter, film);
+            await _employeeCollection.ReplaceOneAsync(filter, log);
         }
 
         [HttpPost("Add")]
@@ -52,9 +52,9 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         {
             var log = new LogMDB
             {
-                logErrorMessage = errorMessage,
-                logDateError = dateError
-            }
+                LogErrorMessage = errorMessage,
+                LogDateError = dateError
+            };
 
             await _employeeCollection.InsertOneAsync(log);
         }
