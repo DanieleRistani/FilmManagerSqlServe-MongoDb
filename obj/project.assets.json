@@ -4792,11 +4792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManager\\FilmManager.csproj",
+      "projectUniqueName": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
       "projectName": "FilmManager",
-      "projectPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManager\\FilmManager.csproj",
+      "projectPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
       "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManager\\obj\\",
+      "outputPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",

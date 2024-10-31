@@ -3,6 +3,7 @@ using FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace FilmManagerSqlServe_MongoDb.Controllers
@@ -35,24 +36,24 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         [HttpPut("Update/{name}")]
         public async void Update(string name, FilmMDB newFilmInfo)
         {
-            var filter = Builders<FilmMDB>.Filter.Eq(f => f.FilmName.ToUpper(), name.ToUpper());
 
-            var film = new FilmMDB
-            {
-                FilmName = newFilmInfo.FilmName,
-                FilmUrlImg = newFilmInfo.FilmUrlImg,
-                FilmDirector = newFilmInfo.FilmDirector,
-                FilmRelaseDate = newFilmInfo.FilmRelaseDate,
-                FilmCategory = newFilmInfo.FilmCategory,
-                FilmsTagsPivots = []
-            };
+             var filter = Builders<FilmMDB>.Filter.Eq(f => f.FilmName, name);
+             var filmSelected= await _employeeCollection.Find(f => f.FilmName.ToUpper()==name.ToUpper()).FirstOrDefaultAsync();
+            
+             var updateDefinition = Builders<FilmMDB>.Update
+            .Set(f => f.FilmName, string.IsNullOrEmpty(newFilmInfo.FilmName) ? filmSelected.FilmName : newFilmInfo.FilmName)
+            .Set(f => f.FilmUrlImg, string.IsNullOrEmpty(newFilmInfo.FilmUrlImg) ? filmSelected.FilmUrlImg : newFilmInfo.FilmUrlImg)
+            .Set(f => f.FilmDirector, string.IsNullOrEmpty(newFilmInfo.FilmDirector) ? filmSelected.FilmDirector : newFilmInfo.FilmDirector)
+            .Set(f => f.FilmRelaseDate, string.IsNullOrEmpty(newFilmInfo.FilmRelaseDate) ? filmSelected.FilmRelaseDate : newFilmInfo.FilmRelaseDate)
+            .Set(f => f.FilmCategory, filmSelected.FilmCategory); 
 
-            foreach (var tag in newFilmInfo.FilmsTagsPivots)
+            
+            if (newFilmInfo.FilmsTagsPivots != null && newFilmInfo.FilmsTagsPivots.Count > 0)
             {
-                film.FilmsTagsPivots.Add(tag);
+                updateDefinition = updateDefinition.Set(f => f.FilmsTagsPivots, newFilmInfo.FilmsTagsPivots);
             }
 
-            await _employeeCollection.ReplaceOneAsync(filter, film);
+            await _employeeCollection.UpdateOneAsync(filter, updateDefinition);
         }
 
         [HttpPost("Add")]

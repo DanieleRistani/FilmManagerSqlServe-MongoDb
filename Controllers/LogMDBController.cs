@@ -36,15 +36,11 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         [HttpPut("Update/{name}")]
         public async void Update(string name, LogMDB newLog)
         {
-            var filter = Builders<LogMDB>.Filter.Eq(f => f.LogErrorMessage.ToUpper(), name.ToUpper());
+            var filter = Builders<LogMDB>.Filter.Eq(f => f.LogErrorMessage,name);
+            
+            var logUpdate = Builders<LogMDB>.Update.Set(f => f.LogErrorMessage, newLog.LogErrorMessage).Set(f => f.LogDateError, newLog.LogDateError);  
 
-            var log = new LogMDB
-            {
-                LogErrorMessage = newLog.LogErrorMessage,
-                LogDateError = newLog.LogDateError,
-            };
-
-            await _employeeCollection.ReplaceOneAsync(filter, log);
+            await _employeeCollection.UpdateOneAsync(filter,logUpdate);
         }
 
         [HttpPost("Add")]
