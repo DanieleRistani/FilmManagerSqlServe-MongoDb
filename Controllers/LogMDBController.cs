@@ -33,37 +33,37 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
             return await _employeeCollection.Find(l => l.LogDateError.ToUpper() == date.ToUpper()).ToListAsync();
         }
 
-        //[HttpPut("Update/{name}")]
-        //public async void Update(string name,LogMDB newLog)
-        //{
-        //    var filter = Builders<LogMDB>.Filter.Eq(f => f.LogErrorMessage.ToUpper(), name.ToUpper());
+        [HttpPut("Update/{name}")]
+        public async void Update(string name, LogMDB newLog)
+        {
+            var filter = Builders<LogMDB>.Filter.Eq(f => f.LogErrorMessage.ToUpper(), name.ToUpper());
 
-        //    var log = new LogMDB
-        //    {
-        //        LogErrorMessage = newLog.LogErrorMessage,
-        //        LogDateError = newLog.LogDateError,
-        //    };
+            var log = new LogMDB
+            {
+                LogErrorMessage = newLog.LogErrorMessage,
+                LogDateError = newLog.LogDateError,
+            };
 
-        //    await _employeeCollection.ReplaceOneAsync(filter, log);
-        //}
+            await _employeeCollection.ReplaceOneAsync(filter, log);
+        }
 
-        //[HttpPost("Add")]
-        //public async void Add(string errorMessage, string dateError)
-        //{
-        //    var log = new LogMDB
-        //    {
-        //        LogErrorMessage = errorMessage,
-        //        LogDateError = dateError
-        //    };
+        [HttpPost("Add")]
+        public async void AddLog(string errorMessage, string dateError)
+        {
+            var log = new LogMDB
+            {
+                LogErrorMessage = errorMessage,
+                LogDateError = dateError
+            };
 
-        //    await _employeeCollection.InsertOneAsync(log);
-        //}
+            await _employeeCollection.InsertOneAsync(log);
+        }
 
-        //[HttpPost("Delete/{date}")]
-        //public async Task<DeleteResult> Delete(string date)
-        //{
-        //    return await _employeeCollection.DeleteManyAsync(l => l.LogDateError.ToUpper() == date.ToUpper());
-        //}
+        [HttpDelete("Delete/{date}")]
+        public async Task<DeleteResult> Delete(string date)
+        {
+            return await _employeeCollection.DeleteManyAsync(l => l.LogDateError.ToUpper() == date.ToUpper());
+        }
 
 
 

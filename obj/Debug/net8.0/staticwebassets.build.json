@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "66XjKEc7WD67S6dClBqOVUOrZFAw5c1N/xTON4fJkXQ=",
-  "Source": "FilmManagerSqlServe&MongoDb",
-  "BasePath": "_content/FilmManagerSqlServe&MongoDb",
+  "Hash": "GQRPeFhaVXe/3y2xcun81WyB0RrxX96sUoNx/m+Ks3E=",
+  "Source": "FilmManager",
+  "BasePath": "_content/FilmManager",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

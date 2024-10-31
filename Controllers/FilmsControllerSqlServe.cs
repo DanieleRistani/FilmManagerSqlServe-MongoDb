@@ -25,7 +25,7 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         [HttpGet("Index")]
         public async Task<ActionResult<IEnumerable<Film>>> GetFilms()
         {
-            return await _context.Films.Include(f=>f.FilmCategory).Include(f=>f.FilmsTagsPivots).ToListAsync();
+            return await _context.Films.ToListAsync();
         }
 
         // GET: api/FilmsControllerSqlServe/5

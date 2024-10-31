@@ -2,8 +2,9 @@
 using FilmManagerSqlServe_MongoDb.MongoDb.Config;
 using FilmManagerSqlServe_MongoDb.SqlServe.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
-namespace FilmManagerSqlServe_MongoDb
+namespace FilmManager
 {
     public class Program
     {
@@ -12,20 +13,18 @@ namespace FilmManagerSqlServe_MongoDb
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddJsonOptions(js => { js.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            //MongoDb
+            //SQL-SERVE
+            builder.Services.AddDbContext<FilmManagerContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("FilmManager")));
+            //MONGO-DB
             builder.Services.Configure<FilmManagerDbConfig>(builder.Configuration.GetSection("FilmMongoDb"));
             builder.Services.AddSingleton<FilmManagerDbConfig>();
             builder.Services.Configure<LogManagerDbConfig>(builder.Configuration.GetSection("LogMongoDb"));
             builder.Services.AddSingleton<LogManagerDbConfig>();
-
-            //SqlServe
-            builder.Services.AddDbContext<FilmManagerContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("FilmDb")));
 
 
             var app = builder.Build();

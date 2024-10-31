@@ -1,6 +1,74 @@
 [
   {
     "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.FilmMDBController",
+    "Method": "AddFilm",
+    "RelativePath": "FilmMDB/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "film_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "film_Ulr_img",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "film_director",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "film_relase_date",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "category",
+        "Type": "FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.CategoryMDB",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.FilmMDBController",
+    "Method": "Delete",
+    "RelativePath": "FilmMDB/Delete/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MongoDB.Driver.DeleteResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.FilmMDBController",
     "Method": "Get",
     "RelativePath": "FilmMDB/Details/{name}",
     "HttpMethod": "GET",
@@ -15,7 +83,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.FilmMDB, FilmManagerSqlServe\u0026MongoDb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.FilmMDB, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,12 +103,39 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.FilmMDB, FilmManagerSqlServe\u0026MongoDb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.FilmMDB, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.FilmMDBController",
+    "Method": "Update",
+    "RelativePath": "FilmMDB/Update/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newFilmInfo",
+        "Type": "FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.FilmMDB",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
@@ -123,7 +218,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Film, FilmManagerSqlServe\u0026MongoDb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Film, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -156,6 +251,59 @@
   },
   {
     "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.LogMDBController",
+    "Method": "AddLog",
+    "RelativePath": "LogMDB/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "errorMessage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateError",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.LogMDBController",
+    "Method": "Delete",
+    "RelativePath": "LogMDB/Delete/{date}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MongoDB.Driver.DeleteResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.LogMDBController",
     "Method": "Get",
     "RelativePath": "LogMDB/Details/{date}",
     "HttpMethod": "GET",
@@ -170,7 +318,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.LogMDB, FilmManagerSqlServe\u0026MongoDb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.LogMDB, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -190,12 +338,39 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.LogMDB, FilmManagerSqlServe\u0026MongoDb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.LogMDB, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.LogMDBController",
+    "Method": "Update",
+    "RelativePath": "LogMDB/Update/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newLog",
+        "Type": "FilmManagerSqlServe_MongoDb.MongoDb.EntityMongoDb.LogMDB",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

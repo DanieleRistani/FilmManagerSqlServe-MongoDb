@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|solutionrelative:controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\context\\filmmanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|solutionrelative:sqlserve\\context\\filmmanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4EDD422-D219-42F2-8080-EB8FFC48F611}|FilmManagerSqlServe\u0026MongoDb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilmsControllerSqlServe.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilmsControllerSqlServe.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
+              "RelativeToolTip": "Controllers\\FilmsControllerSqlServe.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:40:35.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:24:10.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FilmManagerContext.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\Context\\FilmManagerContext.cs",
+              "RelativeDocumentMoniker": "SqlServe\\Context\\FilmManagerContext.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\Context\\FilmManagerContext.cs",
+              "RelativeToolTip": "SqlServe\\Context\\FilmManagerContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:24:05.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-30T21:17:43.449Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
