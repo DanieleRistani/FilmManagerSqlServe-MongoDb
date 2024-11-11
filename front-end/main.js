@@ -194,7 +194,9 @@ function FilmFullTextSeach(){
                                 <div class="mb-1">
                                    <span class="card-text text-white border border-black bg-black rounded-3 px-1 pb-1">${film.filmCategory.categoryName}</span>
                                 </div>
+                                <div class="d-flex flex-wrap">
                                 ${tags}
+                                </div>
                                 <div class="d-flex justify-content-start mt-3">
                                     <button class="btn btn-primary me-1" onclick="infoFilm(${film.filmId})" data-bs-toggle="modal" data-bs-target="#modal${film.filmId}"><i class="fa-solid fa-eye"></i></button>
                                     <button class="btn btn-danger me-1" onclick="deleteFilm(${film.filmId})" ><i class="fa-solid fa-trash"></i></button>
@@ -276,7 +278,9 @@ function infoFilm(id){
                         <div class="mb-1">
                            <span class="card-text text-white border border-black bg-black rounded-3 px-1 pb-1">${film.filmCategory.categoryName}</span>
                         </div>
-                        ${tags}
+                        <div class="d-flex flex-wrap">
+                            ${tags}
+                        </div>
                         <div class="d-flex justify-content-start mt-3">
                             <button class="btn btn-primary me-1" onclick="infoFilm(${film.filmId})" data-bs-toggle="modal" data-bs-target="#modal${film.filmId}"><i class="fa-solid fa-eye"></i></button>
                             <button class="btn btn-danger me-1" onclick="deleteFilm(${film.filmId})" ><i class="fa-solid fa-trash"></i></button>

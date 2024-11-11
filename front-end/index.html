@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="position-absolute  top-0 start-0 mt-5 ms-5">
+    <div class="position-absolute  top-0 start-0 mt-5 ms-5 ">
        
             <button class="btn btn-danger mx-1" id="Add" onclick="showAddFilmForm()"><i class="fa-solid fa-plus"></i></button>
             <button class="btn btn-danger" id="FilmList" onclick=" showFilmList()" ><i class="fa-solid fa-film"></i></button>
@@ -17,14 +17,14 @@
         
     </div>
 
-    <div class="position-absolute top-0 end-0 mt-5 me-5 d-flex">
+    <div class="position-absolute top-0 end-0 mt-5 me-2 d-flex">
 
         <input class="form-control ms-1 " type="search" placeholder="Cerca film" aria-label="Search" id="fullTextSearch">
         <button class="btn btn-danger ms-1" id="btnSearch" onclick="FilmFullTextSeach()"><i class="fa-solid fa-magnifying-glass"></i></button>
         
     </div>
 
-    <div class="position-absolute bottom-0 end-0 mb-5 me-5">
+    <div class="position-fixed bottom-0 end-0 mb-2 me-2">
         <button class="btn btn-warning d-none" id="LightTheme" onclick="lightTheme()" type="button"><i class="fa-solid fa-lightbulb"></i></button>
         <button class="btn btn-dark" id="DarkTheme" onclick="darkTheme()" type="button"><i class="fa-regular fa-lightbulb"></i></button>
     </div>

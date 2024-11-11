@@ -136,7 +136,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAADoAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-31T08:58:07.099Z",
               "EditorCaption": ""
@@ -151,8 +151,7 @@
               "RelativeToolTip": "Controllers\\FilmsControllerSqlServe.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAowGUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:49:13.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:49:13.562Z"
             },
             {
               "$type": "Document",
