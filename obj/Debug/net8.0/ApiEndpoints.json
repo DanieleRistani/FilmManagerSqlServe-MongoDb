@@ -1,5 +1,51 @@
 [
   {
+    "ContainingType": "FilmManager.Controllers.CategoriesController",
+    "Method": "GetCategory",
+    "RelativePath": "Categories/Details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Category",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManager.Controllers.CategoriesController",
+    "Method": "GetCategories",
+    "RelativePath": "Categories/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Category, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.FilmMDBController",
     "Method": "AddFilm",
     "RelativePath": "FilmMDB/Add",
@@ -149,8 +195,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "film",
-        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Film",
+        "Name": "filmDto",
+        "Type": "FilmManager.SqlServe.EntitySqlServe.FilmDto",
         "IsRequired": true
       }
     ],
@@ -242,12 +288,38 @@
         "IsRequired": true
       },
       {
-        "Name": "film",
-        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Film",
+        "Name": "filmDto",
+        "Type": "FilmManager.SqlServe.EntitySqlServe.FilmDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FilmManager.Controllers.FilmsTagsPivotsController",
+    "Method": "PostFilmsTagsPivot",
+    "RelativePath": "FilmsTagsPivots/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filmsTagsPivot",
+        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.FilmsTagsPivot",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.FilmsTagsPivot",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "FilmManagerSqlServe_MongoDb.Controllers.LogMDBController",
@@ -371,6 +443,52 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManager.Controllers.TagsController",
+    "Method": "GetTag",
+    "RelativePath": "Tags/Details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Tag",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FilmManager.Controllers.TagsController",
+    "Method": "GetTags",
+    "RelativePath": "Tags/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe.Tag, FilmManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

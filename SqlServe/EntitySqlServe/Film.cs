@@ -16,7 +16,7 @@ public partial class Film
     public DateOnly FilmRelaseDate { get; set; }
 
     public long FilmCategoryId { get; set; }
-
+    
     public virtual Category FilmCategory { get; set; } = null!;
 
     public virtual ICollection<FilmsTagsPivot> FilmsTagsPivots { get; set; } = new List<FilmsTagsPivot>();

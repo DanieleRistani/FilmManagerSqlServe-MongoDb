@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FilmManagerSqlServe_MongoDb.SqlServe.Context;
 using FilmManagerSqlServe_MongoDb.SqlServe.EntitySqlServe;
+using FilmManager.SqlServe.EntitySqlServe;
 
 namespace FilmManagerSqlServe_MongoDb.Controllers
 {
@@ -25,7 +26,7 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         [HttpGet("Index")]
         public async Task<ActionResult<IEnumerable<Film>>> GetFilms()
         {
-            return await _context.Films.ToListAsync();
+            return await _context.Films.Include(f=>f.FilmCategory).Include(f=>f.FilmsTagsPivots).ToListAsync();
         }
 
         // GET: api/FilmsControllerSqlServe/5
@@ -42,11 +43,22 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
             return film;
         }
 
-        // PUT: api/FilmsControllerSqlServe/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPut("Update/{id}")]
-        public async Task<IActionResult> PutFilm(long id, Film film)
+        public async Task<IActionResult> PutFilm(long id,[FromBody]FilmDto filmDto)
         {
+            var film = new Film()
+            {
+                FilmId = id,
+                FilmName = filmDto.FilmName,
+                FilmUrlImg = filmDto.FilmUrlImg,
+                FilmDirector = filmDto.FilmDirector,
+                FilmRelaseDate = filmDto.FilmRelaseDate,
+                FilmCategory = await _context.Categories.FirstOrDefaultAsync(c => c.CategoryId == filmDto.FilmCategoryId),
+                FilmsTagsPivots = new List<FilmsTagsPivot>()
+            };
+
+
             if (id != film.FilmId)
             {
                 return BadRequest();
@@ -76,13 +88,23 @@ namespace FilmManagerSqlServe_MongoDb.Controllers
         // POST: api/FilmsControllerSqlServe
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost("Add")]
-        public async Task<ActionResult<Film>> PostFilm(Film film)
+        public async Task<ActionResult<Film>> PostFilm([FromBody] FilmDto filmDto) 
         {
+            var film = new Film()
+            {
+                FilmName = filmDto.FilmName,
+                FilmUrlImg = filmDto.FilmUrlImg,
+                FilmDirector = filmDto.FilmDirector,
+                FilmRelaseDate = filmDto.FilmRelaseDate,
+                FilmCategory = await _context.Categories.FirstOrDefaultAsync(c => c.CategoryId == filmDto.FilmCategoryId),
+                FilmsTagsPivots = new List<FilmsTagsPivot>()
+            };
             _context.Films.Add(film);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetFilm", new { id = film.FilmId }, film);
         }
+
 
         // DELETE: api/FilmsControllerSqlServe/5
         [HttpDelete("Delete/{id}")]

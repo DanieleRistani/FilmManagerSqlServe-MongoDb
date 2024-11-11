@@ -11,7 +11,7 @@ public partial class FilmsTagsPivot
 
     public long FilmTagTagId { get; set; }
 
-    public virtual Film FilmTagFilm { get; set; } = null!;
+    public virtual Film FilmTagFilm { get; set; } 
 
-    public virtual Tag FilmTagTag { get; set; } = null!;
+    public virtual Tag FilmTagTag { get; set; }
 }

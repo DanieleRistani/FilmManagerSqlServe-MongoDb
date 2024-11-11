@@ -1,0 +1,35 @@
+.film-list-custom{
+    min-height:  70vh;
+   
+}
+.film-add-custom{
+    min-height:  70vh;
+    
+}
+.custom-header{
+    min-height: 80vh;
+    background-image: url("./img/pngwing.com.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 85%;
+}
+.custom-form{
+    height: 700px;
+    width: 800px;
+    background-color: grey;
+    border-radius: 25px;
+    background-image: url("./img/assadddasd.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 50%;
+    border: 2px solid black;
+}
+.custom-span{
+    width: 20%;
+}
+
+
+
+
+  
+  
