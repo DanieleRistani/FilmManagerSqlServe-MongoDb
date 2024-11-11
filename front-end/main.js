@@ -12,8 +12,9 @@ let img=document.getElementById("imgUrl");
 let categoriesSelect=document.getElementById("categories");
 //TAGS
 let tagsSelect=document.getElementById("tags");
-
-
+//FULL TEXT SEARCH
+let fullTextSearchInput=document.getElementById("fullTextSearch");
+let btnSearch=document.getElementById("btnSearch");
 //SECTION
 let addFilmSection = document.getElementById("AddFilm");
 let addFilmSectionCheck=false;
@@ -103,7 +104,7 @@ window.onload = () => {
 
 // SHOW FILM LIST SECTION
 function showFilmList(){
-
+    indexFilms();
     if(!filmWrapperSectionCheck){
         filmWrapperSection.classList.remove("d-none");
         addFilmSection.classList.add("d-none");
@@ -120,42 +121,92 @@ function showFilmList(){
 
 
 //INDEX FILMS
-fetch('https://localhost:7178/FilmsControllerSqlServe/Index').then(response => {if (!response.ok) {throw new Error('Network response was not ok ' + response.statusText);}return response.json();}).then(data => { 
-data.forEach(film => {
-    let tags = "";
-
-    Promise.all(film.filmsTagsPivots.map(tag => {
-    return getTag(tag.filmTagTagId).then(tagg => {
-        
-        return `<span class=" text-white border border-black bg-warning rounded-3 px-1 me-1 mb-1 ">${tagg.tagName}</span>`;
+function indexFilms(){
+    console.log("index");
+    filmListWrapper.innerHTML="";
+    fetch('https://localhost:7178/FilmsControllerSqlServe/Index').then(response => {if (!response.ok) {throw new Error('Network response was not ok ' + response.statusText);}return response.json();}).then(data => { 
+    data.forEach(film => {
+        let tags = "";
+    
+        Promise.all(film.filmsTagsPivots.map(tag => {
+        return getTag(tag.filmTagTagId).then(tagg => {
+            
+            return `<span class=" text-white border border-black bg-warning rounded-3 px-1 me-1 mb-1 ">${tagg.tagName}</span>`;
+        });
+        })).then(results => {
+       
+        tags = results.join('');
+       
+        let div=document.createElement("div");
+        div.classList.add("col-2","card","mx-4","my-4",);
+        div.innerHTML=`<img src="${film.filmUrlImg}" class="card-img-top mt-2" alt="...">
+                       <div class="card-body">
+                            <h5 class="card-title">${film.filmName}</h5>
+                            <p class="card-text">${film.filmDirector}</p>
+                            <p class="card-text">${film.filmRelaseDate}</p>
+                            <div class="mb-1">
+                               <span class="card-text text-white border border-black bg-black rounded-3 px-1 pb-1">${film.filmCategory.categoryName}</span>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                            ${tags}
+                            </div>
+                            <div class="d-flex justify-content-start mt-3">
+                                <button class="btn btn-primary me-1" onclick="infoFilm(${film.filmId})" data-bs-toggle="modal" data-bs-target="#modal${film.filmId}"><i class="fa-solid fa-eye"></i></button>
+                                <button class="btn btn-danger me-1" onclick="deleteFilm(${film.filmId})" ><i class="fa-solid fa-trash"></i></button>
+                                <button class="btn btn-warning" onclick="editFilm(${film.filmId})" ><i class="fa-solid fa-pen"></i></button>
+                            </div>
+                       </div>` 
+        filmListWrapper.appendChild(div);
     });
-    })).then(results => {
-   
-    tags = results.join('');
-   
-    let div=document.createElement("div");
-    div.classList.add("col-2","card","mx-4","my-4",);
-    div.innerHTML=`<img src="${film.filmUrlImg}" class="card-img-top mt-2" alt="...">
-                   <div class="card-body">
-                        <h5 class="card-title">${film.filmName}</h5>
-                        <p class="card-text">${film.filmDirector}</p>
-                        <p class="card-text">${film.filmRelaseDate}</p>
-                        <div class="mb-1">
-                           <span class="card-text text-white border border-black bg-black rounded-3 px-1 pb-1">${film.filmCategory.categoryName}</span>
-                        </div>
-                        ${tags}
-                        <div class="d-flex justify-content-start mt-3">
-                            <button class="btn btn-primary me-1" onclick="infoFilm(${film.filmId})" data-bs-toggle="modal" data-bs-target="#modal${film.filmId}"><i class="fa-solid fa-eye"></i></button>
-                            <button class="btn btn-danger me-1" onclick="deleteFilm(${film.filmId})" ><i class="fa-solid fa-trash"></i></button>
-                            <button class="btn btn-warning" onclick="editFilm(${film.filmId})" ><i class="fa-solid fa-pen"></i></button>
-                        </div>
-                   </div>` 
-    filmListWrapper.appendChild(div);
-});
+    
+    
+    });   
+    }).catch(error => {console.error('There was a problem with the fetch operation:', error);});
+}
 
 
-});   
-}).catch(error => {console.error('There was a problem with the fetch operation:', error);});
+
+
+function FilmFullTextSeach(){
+   
+    let string=fullTextSearchInput.value;
+    filmListWrapper.innerHTML="";
+    fetch('https://localhost:7178/FilmsControllerSqlServe/Index').then(response => {if (!response.ok) {throw new Error('Network response was not ok ' + response.statusText);}return response.json();}).then(data => { 
+        data.filter(film => film.filmName.toLowerCase().includes(string.toLowerCase())).forEach(film => {
+            let tags = "";
+        
+            Promise.all(film.filmsTagsPivots.map(tag => {
+            return getTag(tag.filmTagTagId).then(tagg => {
+                
+                return `<span class=" text-white border border-black bg-warning rounded-3 px-1 me-1 mb-1 ">${tagg.tagName}</span>`;
+            });
+            })).then(results => {
+           
+            tags = results.join('');
+           
+            let div=document.createElement("div");
+            div.classList.add("col-2","card","mx-4","my-4",);
+            div.innerHTML=`<img src="${film.filmUrlImg}" class="card-img-top mt-2" alt="...">
+                           <div class="card-body">
+                                <h5 class="card-title">${film.filmName}</h5>
+                                <p class="card-text">${film.filmDirector}</p>
+                                <p class="card-text">${film.filmRelaseDate}</p>
+                                <div class="mb-1">
+                                   <span class="card-text text-white border border-black bg-black rounded-3 px-1 pb-1">${film.filmCategory.categoryName}</span>
+                                </div>
+                                ${tags}
+                                <div class="d-flex justify-content-start mt-3">
+                                    <button class="btn btn-primary me-1" onclick="infoFilm(${film.filmId})" data-bs-toggle="modal" data-bs-target="#modal${film.filmId}"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn btn-danger me-1" onclick="deleteFilm(${film.filmId})" ><i class="fa-solid fa-trash"></i></button>
+                                    <button class="btn btn-warning" onclick="editFilm(${film.filmId})" ><i class="fa-solid fa-pen"></i></button>
+                                </div>
+                           </div>` 
+            filmListWrapper.appendChild(div);
+        });});
+    }).catch(error => {console.error('There was a problem with the fetch operation:', error);});
+}
+
+
 
 
 

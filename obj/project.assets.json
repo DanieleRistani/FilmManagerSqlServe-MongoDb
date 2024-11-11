@@ -8647,19 +8647,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Desktop\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniele\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
+      "projectUniqueName": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
       "projectName": "FilmManager",
-      "projectPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
-      "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\obj\\",
+      "projectPath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\FilmManager.csproj",
+      "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\filmstagspivotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\filmstagspivotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\logmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\logmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\filmstagspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\filmstagspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\filmmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\filmscontrollersqlserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\filmstagspivotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\filmstagspivotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\logmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\logmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\filmstagspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\filmstagspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\filmmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\filmmdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\sqlserve\\entitysqlserve\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:sqlserve\\entitysqlserve\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\desktop\\wa\\c#_corso\\filmmanagersqlserve-mongodb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|c:\\users\\daniele\\wa\\filmmanagersqlserve-mongodb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2A9DE1-2A69-4732-B5EC-647C1A4475E5}|FilmManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,76 +82,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FilmsTagsPivotsController.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsTagsPivotsController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsTagsPivotsController.cs",
               "RelativeDocumentMoniker": "Controllers\\FilmsTagsPivotsController.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsTagsPivotsController.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsTagsPivotsController.cs",
               "RelativeToolTip": "Controllers\\FilmsTagsPivotsController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T11:25:27.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T11:25:27.403Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Log.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Log.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Log.cs",
               "RelativeDocumentMoniker": "SqlServe\\EntitySqlServe\\Log.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Log.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Log.cs",
               "RelativeToolTip": "SqlServe\\EntitySqlServe\\Log.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T10:10:57.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T10:10:57.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LogMDBController.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\LogMDBController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\LogMDBController.cs",
               "RelativeDocumentMoniker": "Controllers\\LogMDBController.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\LogMDBController.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\LogMDBController.cs",
               "RelativeToolTip": "Controllers\\LogMDBController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:13:26.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T09:13:26.498Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "FilmMDBController.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmMDBController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmMDBController.cs",
               "RelativeDocumentMoniker": "Controllers\\FilmMDBController.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmMDBController.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmMDBController.cs",
               "RelativeToolTip": "Controllers\\FilmMDBController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:12:25.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T09:12:25.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\appsettings.json",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAADoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-31T08:58:07.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FilmsControllerSqlServe.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
               "RelativeDocumentMoniker": "Controllers\\FilmsControllerSqlServe.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\FilmsControllerSqlServe.cs",
               "RelativeToolTip": "Controllers\\FilmsControllerSqlServe.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAowGUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,48 +158,45 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TagsController.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\TagsController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\TagsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TagsController.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\TagsController.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\TagsController.cs",
               "RelativeToolTip": "Controllers\\TagsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:24:57.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T09:24:57.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FilmsTagsPivot.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
               "RelativeDocumentMoniker": "SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
               "RelativeToolTip": "SqlServe\\EntitySqlServe\\FilmsTagsPivot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:29:05.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T09:29:05.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FilmDto.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmDto.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmDto.cs",
               "RelativeDocumentMoniker": "SqlServe\\EntitySqlServe\\FilmDto.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmDto.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\FilmDto.cs",
               "RelativeToolTip": "SqlServe\\EntitySqlServe\\FilmDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:04:49.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T15:04:49.364Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Film.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Film.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Film.cs",
               "RelativeDocumentMoniker": "SqlServe\\EntitySqlServe\\Film.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Film.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Film.cs",
               "RelativeToolTip": "SqlServe\\EntitySqlServe\\Film.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -213,9 +206,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Category.cs",
               "RelativeDocumentMoniker": "SqlServe\\EntitySqlServe\\Category.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Category.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\SqlServe\\EntitySqlServe\\Category.cs",
               "RelativeToolTip": "SqlServe\\EntitySqlServe\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -225,9 +218,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwCkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,9 +230,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\FilmManagerSqlServe-MongoDb\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\FilmManagerSqlServe-MongoDb\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
